@@ -1,73 +1,37 @@
 # genesis
 
-A life simulation application or game, potentially focusing on the origins or evolution of life, or a broader life simulation. (Please update this description with specific details about the app's gameplay, scope, and unique features).
+A life simulation web app focused on the origins and evolution of life.
 
 ## Features
-- Life simulation mechanics (e.g., birth, growth, reproduction, death)
+- Life simulation mechanics (birth, growth, reproduction, death)
 - Environmental factors and interactions
-- Evolutionary aspects (if applicable)
+- Evolutionary aspects
 - Scenarios or sandbox mode
-- (Add other relevant features)
 
-## Getting Started
+## Live Demo
 
-### Prerequisites
-- Node.js (version 18 or higher)
-- npm
+Visit the live site: [https://igor-kan.github.io/genesis](https://igor-kan.github.io/genesis)
 
-### Installation
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/igor-kan/genesis.git
-    cd genesis
-    ```
-2. Install dependencies:
+## Local Development
+
+1. Install dependencies:
     ```bash
     npm install
     ```
+2. Start the development server:
+    ```bash
+    npm run dev
+    ```
 
-### Running the Development Server
-To start the development server, run:
+## Deployment
+
+This app is automatically deployed to GitHub Pages from the `gh-pages` branch. The static site is built with Vite and output to the `dist` directory.
+
+To deploy manually:
 ```bash
-npm run dev
+npm run deploy
 ```
-This will typically start the server on `http://localhost:5173` (for Vite) or `http://localhost:3000`.
 
-## Technologies Used
-- Vite
-- React
-- TypeScript
-- Tailwind CSS
-- (Please confirm and add other technologies used, e.g., shadcn-ui)
+---
 
-## Deployment (GitHub Pages)
-
-You can deploy this project to GitHub Pages:
-
-1. **Build the static site:**
-   The output directory for Vite is usually `dist`.
-    ```bash
-    npm run build
-    ```
-2. **Install `gh-pages`:**
-    ```bash
-    npm install --save-dev gh-pages
-    ```
-3. **Update `package.json`:**
-    Add `homepage` and `scripts` for deployment. The `deploy` script should point to the `dist` directory.
-    ```json
-    {
-      "homepage": "https://igor-kan.github.io/genesis",
-      "scripts": {
-        "predeploy": "npm run build",
-        "deploy": "gh-pages -d dist"
-      }
-    }
-    ```
-4. **Deploy:**
-    ```bash
-    npm run deploy
-    ```
-
-## Custom Domain
-You can connect a custom domain to your deployed project. Refer to your hosting provider's documentation for instructions.
+For more, see [GitHub Pages for this repo](https://igor-kan.github.io/genesis).
