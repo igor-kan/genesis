@@ -32,6 +32,8 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
+      - name: List dist contents
+        run: ls -la dist/
       - name: Create .nojekyll file
         run: touch dist/.nojekyll
       - name: Setup Pages
