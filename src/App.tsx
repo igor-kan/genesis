@@ -58,7 +58,7 @@ const App = () => (
       <Toaster /> {/* Standard toast notifications with queue management */}
       <Sonner /> {/* Modern sonner-style notifications for better UX */}
       
-      <BrowserRouter>
+      <BrowserRouter basename="/genesis/">
         <Routes>
           {/* Primary application route - serves the main game interface */}
           <Route path="/" element={<Index />} />

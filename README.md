@@ -107,7 +107,8 @@ The project is configured for automatic deployment to GitHub Pages:
 
 1. **Push to main branch** triggers GitHub Actions workflow
 2. **Automated build** process creates production assets
-3. **Deployment** to `gh-pages` branch serves the application
+3. **Deployment** to `gh-pages` branch serves the application under `/genesis/` subdirectory
+4. **Client-side routing** is configured with `basename="/genesis/"` in `BrowserRouter` for correct navigation
 
 **Live URL**: [https://igor-kan.github.io/genesis](https://igor-kan.github.io/genesis)
 
@@ -120,7 +121,8 @@ npm run build
 ```
 
 ### Environment Configuration
-- **Base Path**: Configured for relative paths (`./`) for flexible hosting
+- **Base Path**: Configured as `/genesis/` for GitHub Pages subdirectory deployment
+- **BrowserRouter**: Uses `basename="/genesis/"` for correct client-side routing
 - **Asset Optimization**: Automatic code splitting and compression
 - **Browser Compatibility**: Supports all modern browsers with ES6+ features
 
